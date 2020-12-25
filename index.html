@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>Collapsible nested</title>
-      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
-      <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-      <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
-      <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-   </head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="tab.css" rel="stylesheet">
+</head>
+<body>
 
- <body>
-      <div data-role="collapsible">
-        <h4>tere</h4>
-        <p>tere</p>
-        <div data-role="collapsible">
-          <h4>tere</h4>
-          <p>tere</p>
-        </div>
-        <div data-role="collapsible">
-          <h4>tere</h4>
-          <p>tere</p>
-        </div>
-        <div data-role="collapsible">
-          <h4>tere</h4>
-          <p>tere</p>
-        </div>
-        <div data-role="collapsible">
-          <h4>tere</h4>
-          <p>tere</p>
-        </div>
-      </div>
+<h2>Tabs</h2>
+<p>Click on the buttons inside the tabbed menu:</p>
 
-  </body>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+</div>
+
+<div id="London" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script src="/tab.js"></script>
+
+</body>
 </html>
