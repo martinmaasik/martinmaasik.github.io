@@ -16,20 +16,28 @@
 
 <div id="oneclub" class="tabcontent">
   <ul class="col_ul">
-    <li> tere
-        <li> tere
-            <li> tere
-            </li>
-        </li>
-        <li> tere
-            <li> tere
-            </li>
-        </li>
-        <li> tere
-            <li> tere
-            </li>
-        </li>
-    </li>
+		<li><span>coffee</span>
+			<ul>
+				<li><span>paki</span>  <!-- Add <span> tag arround every multi level <li>
+										so it can behave like a toggle button -->
+					<ul>
+						<li>karachi    <!-- It will not work because it has no span tag arround it :(
+						                -->
+							<ul>
+								<li>North</li>
+								<li>West</li>
+							</ul>
+						</li>
+						<li>lahore</li>
+					</ul>
+				</li>
+				<li>indian</li>
+				<li>arbian</li>
+			</ul>
+		</li>
+		<li>milk</li>
+		<li>honey</li>
+	</ul>
 </div>
 
 <div id="onediamond" class="tabcontent">
