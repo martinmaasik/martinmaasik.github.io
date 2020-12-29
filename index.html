@@ -19,8 +19,17 @@
   <button value="customers" onclick="change_myselect(this.value)">2NT</button>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="/js/tab.js"></script>
+<script>
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var myArr = JSON.parse(this.responseText);
+      document.getElementById("demo").innerHTML = myArr[0];
+    }
+  };
+  xmlhttp.open("GET", "system.json", true);
+  xmlhttp.send();
+</script>
 
 </body>
 </html>
