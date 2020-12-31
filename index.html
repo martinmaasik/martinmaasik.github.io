@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<div class="tab">
+<!-- <div class="tab">
   <button value="1C" onclick="change_myselect(this.value)">1&clubs;</button>
   <button value="1D" onclick="change_myselect(this.value)">1&diams;</button>
   <button value="1H" onclick="change_myselect(this.value)">1&hearts;</button>
@@ -16,13 +16,18 @@
   <button value="2D" onclick="change_myselect(this.value)">2&diams;</button>
   <button value="2H" onclick="change_myselect(this.value)">2&hearts;</button>
   <button value="2S" onclick="change_myselect(this.value)">2&spades;</button>
-  <button value="customers" onclick="change_myselect(this.value)">2NT</button>
-</div>
+  <button value="2NT" onclick="change_myselect(this.value)">2NT</button>
+</div> -->
 
-<p id="demo"></p>
+<!-- <p id="demo"></p> -->
 
 <script>
-  var xmlhttp = new XMLHttpRequest();
+  var btn = document.createElement("BUTTON");
+  btn.value = tere;
+  btn.innerHTML = "CLICK ME";
+  document.body.appendChild(btn);
+
+  <!-- var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       var myArr = JSON.parse(this.responseText);
@@ -30,7 +35,7 @@
     }
   };
   xmlhttp.open("GET", "system.json", true);
-  xmlhttp.send();
+  xmlhttp.send(); -->
 </script>
 
 </body>
