@@ -6,11 +6,31 @@
 </head>
 <body>
 
+<div id="demo"> </div>
+
 <script>
   var btn = document.createElement("BUTTON");
   btn.value = "tere";
   btn.innerHTML = "CLICK ME";
   document.body.appendChild(btn);
+
+  myObj = {
+    "name":"John",
+    "age":30,
+    "cars": {
+      "car1":"Ford",
+      "car2":"BMW",
+      "car3":"Fiat"
+    }
+   }
+
+   for (x in myObj.car) {
+    document.getElementById("demo").innerHTML += myObj.car[x];
+  }
+
+
+
+
 </script>
 
 </body>
