@@ -14,21 +14,52 @@
   btn.innerHTML = "CLICK ME";
   document.body.appendChild(btn);
 
-  myObj = {
-    "name":"John",
-    "age":30,
-    "cars": {
-      "car1":"Ford",
-      "car2":"BMW",
-      "car3":"Fiat"
-    }
-   }
+  oneClub = {
+              "meaning": "16+HCP",
+              "children": {
+                            "1d": {
+                              "meaning": "0-7HCP",
+                              "children": {
+                                {
+                                  "1h": {
+                                    "meaning": "20+ HCP",
+                                    "children": {
 
-   for (x in myObj.cars) {
+                                    }
+                                  },
+                                  "1s": {
+                                    "meaning": "5+s",
+                                    "children": {
+
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "1h": {
+                              "meaning": "8+ HCP, 5+h",
+                              "children": {
+                                {
+                                  "1s": {
+                                    "meaning": "5+s",
+                                    "children": {
+
+                                    }
+                                  }
+                                }
+                              }
+                            }
+
+                          }
+            }
+
+   for (x in oneClub.children) {
     document.getElementById("demo").innerHTML += x;
   }
 
-
+  for (x in oneClub.children[1d].children) {
+   document.getElementById("demo").innerHTML += x;
+ }
 
 </script>
 
